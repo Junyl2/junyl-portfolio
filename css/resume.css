@@ -1,0 +1,135 @@
+:root {
+  --main-fnt-clr: #dcab6b;
+  /* --main-fnt-clr: rgb(255, 187, 0); */
+  --primary-color: #dcab6b;
+  --primary-body-clr: rgb(20, 20, 20);
+
+  /* light mode */
+  --light-body: #a9e06d;
+  --light-card: #f3faf0;
+  --light-header: #046104;
+  --light-text: #333333;
+}
+
+body {
+  background-color: var(--primary-body-clr);
+  color: #f3f3f3;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden !important;
+}
+
+body.light-mode {
+  /*   background-color: var(--light-body) !important; */
+  background: linear-gradient(to right top, #a9e06d, #f3faf0);
+}
+.light-mode i {
+  color: black !important;
+}
+
+.light-mode .resume-card {
+  background-color: var(--light-card) !important;
+}
+.light-mode h4 {
+  color: var(--light-header) !important;
+}
+.light-mode p {
+  color: var(--light-text) !important;
+}
+.light-mode .resume-section h6 {
+  color: black !important;
+}
+.light-mode .resume-section small {
+  color: rgb(26, 25, 25) !important;
+}
+.light-mode .resume-container i {
+  color: var(--light-header) !important;
+}
+.light-mode .badge-skill {
+  background-color: var(--light-header) !important;
+  color: rgb(223, 220, 220) !important;
+}
+.light-mode .timeline {
+  border-left: 3px solid var(--light-body) !important;
+}
+.light-mode .blob-bg {
+  display: none !important;
+}
+.resume-section {
+  width: 90%;
+  overflow: hidden;
+}
+.resume-container {
+  padding: 20px;
+}
+
+.resume-title {
+  /*  font-size: 2.5rem; */
+  font-weight: bold;
+  /*   margin-bottom: 40px; */
+  /* color: var(--main-fnt-clr);  */
+  color: rgb(236, 235, 235) !important;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 40px;
+  border-left: 3px solid var(--primary-color);
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -14px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background: var(--primary-body-clr);
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+.resume-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+}
+
+.badge-skill {
+  background-color: var(--primary-color);
+  color: #141414;
+  font-weight: 500;
+}
+
+.resume-card h4 i {
+  color: var(--primary-color);
+}
+small {
+  color: rgb(202, 201, 201) !important;
+}
+
+.blob-bg {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  z-index: 0;
+  opacity: 0.05;
+}
+.resume-card h6 {
+  color: var(--main-fnt-clr) !important;
+}
+/* i {
+  color: var(--primary-color);
+}
+ */

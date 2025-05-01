@@ -1,0 +1,104 @@
+:root {
+  --main-fnt-clr: #dcab6b;
+  /* --main-fnt-clr: rgb(255, 187, 0); */
+  --primary-color: #dcab6b;
+  --primary-body-clr: rgb(20, 20, 20);
+
+  /* light mode */
+  --light-body: #a9e06d;
+  --light-card: #f3faf0;
+  --light-header: #046104;
+  --light-text: #333;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden !important;
+}
+html {
+  overflow-x: hidden !important;
+}
+
+.light-mode .fa-html5 {
+  color: rgb(233, 81, 21) !important;
+}
+.light-mode .fa-github {
+  color: black !important;
+}
+
+.light-mode .fa-git-alt {
+  color: rgb(233, 81, 21) !important;
+}
+.fa-git-alt {
+  color: rgb(233, 81, 21) !important;
+}
+.light-mode .fa-wordpress {
+  color: rgb(65, 63, 63) !important;
+}
+.light-mode .fa-figma {
+  color: rgb(4, 157, 196) !important;
+}
+.light-mode .fa-sass {
+  color: rgb(236, 83, 142) !important;
+}
+.light-mode .fa-css3-alt {
+  color: rgb(6, 78, 185) !important;
+}
+.light-mode .fa-js {
+  color: rgb(255, 187, 0) !important;
+}
+.light-mode h2 {
+  color: var(--light-header) !important;
+}
+body.light-mode {
+  background: linear-gradient(to right top, #a9e06d, #f3faf0);
+}
+
+.light-mode .skill-label {
+  color: black !important;
+}
+
+.skills-container {
+  padding: 20px;
+}
+
+.fa-bootstrap {
+  color: rgb(77, 0, 128);
+}
+
+.skills-grid {
+  width: 100%;
+  height: 100vh;
+}
+
+.skill-item {
+  text-align: center;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+  font-family: 'Poppins' !important;
+}
+
+.skill-item i {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+@media (min-width: 1024px) {
+  body,
+  html {
+    overflow: hidden;
+  }
+}
+
+.skill-item:hover i {
+  transform: scale(1.2);
+}
+
+.skill-label {
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}

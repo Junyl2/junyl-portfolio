@@ -1,0 +1,114 @@
+:root {
+  --main-fnt-clr: #dcab6b;
+  /* --main-fnt-clr: rgb(255, 187, 0); */
+  --primary-color: #dcab6b;
+  --primary-body-clr: rgb(20, 20, 20);
+
+  /* light mode */
+  --light-body: #a9e06d;
+  --light-card: #f3faf0;
+  --light-header: #046104;
+  --light-text: #333;
+}
+
+body {
+  background-color: rgb(20, 20, 20);
+  color: #fff;
+  padding: 50px 0;
+}
+.services-container {
+  width: 90%;
+  padding: 0px 30px;
+}
+.section-heading {
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: 'Poppins';
+}
+body.light-mode {
+  background: linear-gradient(to right top, #a9e06d, #f3faf0);
+}
+.light-mode .service-card {
+  background-color: var(--light-card);
+}
+.light-mode .service-title {
+  color: var(--light-header);
+}
+.light-mode .service-card p {
+  color: var(--light-text) !important;
+}
+.light-mode .service-icon {
+  background-color: var(--light-header);
+}
+.light-mode .highlight-card {
+  background-color: var(--light-header);
+}
+.light-mode .highlight-card p {
+  color: rgb(230, 229, 229) !important;
+}
+.light-mode .highlight-card .service-title {
+  color: white !important;
+}
+.light-mode .light-icon {
+  background-color: white !important;
+}
+.light-mode .service-icon i {
+  color: #f0f0f0;
+}
+.light-mode .light-icon i {
+  color: rgb(68, 64, 64);
+}
+.service-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 30px 20px;
+  height: 90%;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+.light-icon {
+  background-color: white !important;
+}
+.light-icon i {
+  color: #3f3f3f !important;
+}
+.service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  background-color: rgb(231, 231, 231);
+
+  padding: 15px;
+  border-radius: 50%;
+  width: fit-content;
+}
+.service-icon i {
+  color: #202020;
+}
+.service-title {
+  font-family: 'Poppins';
+  margin-bottom: 10px;
+  color: rgb(231, 231, 231);
+}
+.highlight-card {
+  background-color: #dcab6b;
+}
+.highlight-card p {
+  color: black !important;
+}
+.service-card p {
+  color: #ddddddd2;
+}
+.highlight-card h5 {
+  color: black !important;
+}

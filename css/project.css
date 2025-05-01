@@ -1,0 +1,100 @@
+:root {
+  --main-fnt-clr: #dcab6b;
+  /* --main-fnt-clr: rgb(255, 187, 0); */
+  --primary-color: #dcab6b;
+  --primary-body-clr: rgb(20, 20, 20);
+
+  /* light mode */
+  --light-body: #a9e06d;
+  --light-card: #f3faf0;
+  --light-header: #046104;
+  --light-text: #333;
+}
+
+body {
+  background-color: var(--primary-body-clr);
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden !important;
+}
+
+body.light-mode {
+  /*   background-color: var(--light-body) !important; */
+  background: linear-gradient(to right top, #a9e06d, #f3faf0);
+}
+.light-mode .project h5 {
+  color: var(--light-header) !important;
+}
+
+.light-mode .project {
+  background-color: var(--light-card) !important;
+}
+.light-mode .project p {
+  color: var(--light-text) !important;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container img:active {
+  transform: scale(2);
+}
+.container h5 {
+  color: var(--main-fnt-clr) !important;
+}
+.container p {
+  color: white !important;
+}
+.light-mode .btn-demo {
+  background: linear-gradient(to top right, #046104, #37d622b9);
+  font-weight: 500;
+  border-radius: 8px;
+  color: #f0f0f0 !important;
+  border: none !important;
+}
+.light-mode .btn-demo:hover {
+  background: linear-gradient(to top right, #37d622b9, #046104);
+}
+
+.btn-demo {
+  border-radius: 8px;
+  font-weight: normal;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-demo {
+  background: linear-gradient(to right top, #f0b262, #f3e6d0);
+  font-weight: 500;
+}
+.btn-demo:hover {
+  background: linear-gradient(to right top, #f3e6d0, #f0b262);
+}
+
+.projects-container {
+  padding: 20px;
+}
+
+.sub-container {
+  width: 90%;
+  min-height: 100vh;
+}
+
+.project {
+  margin-bottom: 30px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.03) !important;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  transition: color 0.5s ease-in-out;
+}

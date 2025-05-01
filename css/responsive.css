@@ -1,0 +1,133 @@
+@media (min-width: 1420px) {
+  .social-icons {
+    position: absolute;
+    bottom: -20px !important;
+    z-index: 3;
+    left: 20px;
+  }
+}
+@media (max-width: 1360px) {
+  .introduce p,
+  .artworks p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .contact-text,
+  .contact-image {
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .contact-image,
+  .light-contact {
+    margin: 50px 0 40px 0;
+    height: auto;
+    justify-content: center;
+  }
+
+  .contact-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #contacts-icon {
+    position: static;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column !;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sub-container {
+    min-width: 100% !important;
+  }
+}
+
+/* Hide sidebar on small screens */
+@media (max-width: 768px) {
+  #sidebar {
+    display: none;
+  }
+  #main-content {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .introduce-container {
+    align-items: center !important;
+  }
+  .home-container {
+    justify-content: start;
+    align-items: start;
+  }
+  .welcome {
+    margin-top: 60px;
+    margin-left: -30px;
+  }
+  .welcome h1 {
+    margin-bottom: 10px !important;
+  }
+  .projects-container .sub-container {
+    padding: 0px 30px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .skills-grid {
+    margin-top: 40px;
+  }
+  .skill-item i {
+    font-size: 2.7rem;
+  }
+  .row {
+    margin-top: 0px !important;
+    padding: 0px !important;
+  }
+  .about-parent {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .about-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .welcome {
+    margin-top: 130px !important;
+    margin-left: -25px !important;
+  }
+  .projects-container {
+    padding: 20px 0px !important;
+  }
+  .resume-container {
+    padding: 20px 0px !important;
+  }
+  .resume-section {
+    width: 100%;
+  }
+  .skills-container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  /*  .section-heading {
+    margin-top: 20px !important;
+  } */
+}
+
+@media (max-width: 468px) {
+  #contacts-icon {
+    margin-left: 10px;
+    font-size: 0.9rem;
+  }
+}

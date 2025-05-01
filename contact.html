@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- AOS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <!-- style sheets -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="/css/animation.css" />
+
+    <style></style>
+  </head>
+  <body>
+    <div class="container contact-container">
+      <div class="contact-section sub-container">
+        <!-- Left Form Area -->
+        <div
+          class="contact-text"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="600"
+        >
+          <h2>Let's <span>talk</span></h2>
+          <p>
+            Let’s connect and create something great. Whether it’s a new
+            opportunity or a quick chat, message me directly or fill out the
+            form—I’ll respond promptly.
+          </p>
+          <!-- <p>
+            To request a quote or want to meet up for coffee, contact me
+            directly or fill out the form and I will get back to you soon.
+          </p>
+ -->
+          <form class="contact-form" id="contactForm">
+            <div class="name-email">
+              <div class="mb-3 this-name">
+                <input
+                  type="text"
+                  class="form-control p-3 name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="mb-3 this-email">
+                <input
+                  type="email"
+                  class="form-control p-3 name"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <input
+                type="subject"
+                class="form-control p-3"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                rows="6"
+                class="form-control p-3 msg"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn px-4 py-2">SEND MESSAGE</button>
+          </form>
+        </div>
+
+        <!-- thankyou modal -->
+        <div
+          class="modal fade"
+          id="thankYouModal"
+          tabindex="-1"
+          aria-labelledby="thankYouModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-4">
+              <h5 class="modal-title mb-2" id="thankYouModalLabel">
+                Thank You, <span id="userName"></span>!
+              </h5>
+              <p>
+                Your message has been sent. I’ll get back to you as soon as
+                possible.
+              </p>
+
+              <button
+                type="button"
+                class="btn btn-secondary mt-3 text-black"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Image Area -->
+        <div class="contact-image position-relative">
+          <!-- <div class="blob"></div> -->
+
+          <img src="/images/main-contact-pp.png" alt="Contact Illustration" />
+
+          <div class="social-icons d-flex flex-column" id="contacts-icon">
+            <a href="#" class="text-decoration-none text-light"
+              ><i class="bi bi-telephone number"> (PH) +63 9633 818 902 </i></a
+            >
+            <a href="#" class="text-decoration-none text-light"
+              ><i class="bi bi-envelope myEmail"> artbyjunylc@gmail.com</i></a
+            >
+          </div>
+        </div>
+        <!-- light mode -->
+        <div
+          class="light-contact position-relative d-none"
+          data-aos="fade-left"
+          data-aos-delay="100"
+          data-aos-duration="600"
+        >
+          <img src="/images/light-profile.png" alt="Contact Illustration" />
+
+          <div class="d-flex flex-column" id="contacts-icon">
+            <a href="#" class="text-decoration-none text-light"
+              ><i class="bi bi-telephone number"> </i>(PH) +63 9633 818 902</a
+            >
+            <a href="#" class="text-decoration-none text-light"
+              ><i class="bi bi-envelope myEmail"> </i>artbyjunylc@gmail.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
+  </body>
+</html>
