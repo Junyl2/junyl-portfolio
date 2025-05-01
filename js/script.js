@@ -64,7 +64,7 @@ function startProgressBar() {
     bar.style.width = "0%";
     setTimeout(() => {
         bar.style.transition = "width 0.1s ease";
-        bar.style.width = "99%";
+        bar.style.width = "70";
     }, 50);
 }
 

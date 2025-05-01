@@ -65,6 +65,9 @@ body.light-mode {
 .resume-container {
   padding: 20px;
 }
+.resume-card p {
+  margin: 10px 0px !important;
+}
 
 .resume-title {
   /*  font-size: 2.5rem; */
