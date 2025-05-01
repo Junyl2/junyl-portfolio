@@ -17,7 +17,7 @@ html {
       rgba(3, 143, 12, 0.192) 75%,
       rgba(25, 155, 5, 0.438) 100%
     ),
-    url(../images/lighthome.png);
+    url(../images/lighthome-min.png);
   opacity: 1;
 }
 
@@ -63,7 +63,7 @@ html {
       rgba(3, 143, 12, 0.192) 70%,
       #f5af5a77 100%
     ),
-    url(../images/lighthome.png);
+    url(../images/lighthome-min.png);
   opacity: 1;
   position: absolute;
   bottom: 0;
