@@ -17,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden !important;
+  overflow: hidden !important;
 }
 html {
   overflow-x: hidden !important;
@@ -72,7 +72,6 @@ body.light-mode {
 
 .skills-grid {
   width: 100%;
-  height: 100vh;
 }
 
 .skill-item {
