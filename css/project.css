@@ -13,10 +13,10 @@
 
 body {
   background-color: var(--primary-body-clr);
-  overflow-x: hidden !important;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 html {

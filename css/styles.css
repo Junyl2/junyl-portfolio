@@ -21,6 +21,14 @@ html {
   overflow-x: hidden !important;
   scroll-behavior: auto !important;
 }
+.error-message {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 20px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}
 
 .light-mode .nav-item a::after {
   background-color: var(--light-header) !important;
