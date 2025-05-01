@@ -17,7 +17,7 @@ html {
       rgba(28, 95, 32, 0.562) 50%,
       rgba(14, 121, 14, 0.884) 100%
     ),
-    url(/images/IMG_5609.jpeg) !important;
+    url(../images/IMG_5609.jpeg) !important;
   opacity: 1;
 }
 /* .welcome {
@@ -64,7 +64,7 @@ html {
 }
 
 .profile-img {
-  background-image: url(/images/profile-bg.png);
+  background-image: url(../images/profile-bg.png);
   position: absolute;
   bottom: 0;
   right: 0;

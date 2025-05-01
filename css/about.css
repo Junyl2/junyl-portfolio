@@ -29,7 +29,6 @@ html {
 
   background: url('https://www.transparenttextures.com/patterns/white-wall-3.png')
     repeat;
-  /* background-color: #c9a06a; */
   background-color: var(--primary-color);
   border-radius: 5px;
 }

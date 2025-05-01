@@ -24,7 +24,6 @@ html {
 }
 
 body.light-mode {
-  /*   background-color: var(--light-body) !important; */
   background: linear-gradient(to right top, #a9e06d, #f3faf0);
 }
 .light-mode i {
@@ -129,7 +128,3 @@ small {
 .resume-card h6 {
   color: var(--main-fnt-clr) !important;
 }
-/* i {
-  color: var(--primary-color);
-}
- */
