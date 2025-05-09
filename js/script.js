@@ -15,6 +15,30 @@ function loadPage(page, callback) {
         .then((html) => {
             contentArea.innerHTML = html;
 
+            /* Reinitialize G light box */
+            setTimeout(() => {
+                loader.style.display = "none";
+                initializeTooltips();
+                AOS.refresh();
+
+                // Reinitialize GLightbox
+                if (typeof GLightbox === "function") {
+                    GLightbox({ selector: '.glightbox' });
+                }
+
+                // Reinitialize Masonry
+                const grid = document.querySelector('[data-masonry]');
+                if (grid) {
+                    new Masonry(grid, {
+                        percentPosition: true,
+                        itemSelector: '.col-sm-6',
+                    });
+                }
+
+                if (typeof callback === "function") callback();
+
+            }, 1400);
+
             document.querySelectorAll(".nav-link").forEach(link => {
                 const linkPage = link.getAttribute("data-page");
                 link.classList.toggle("active", linkPage === page);
@@ -157,6 +181,9 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+const lightbox = GLightbox({
+    selector: '.glightbox'
+});
 
 
 // Initialize Bootstrap tooltips for newly loaded content
@@ -189,36 +216,3 @@ document.querySelectorAll("[data-page]").forEach((navLink) => {
 });
 
 
-
-
-// Init gallery modal preview
-function initializeGalleryModal() {
-    const gallery = document.querySelector(".masonry-gallery");
-
-    if (gallery) {
-        gallery.addEventListener("click", function (e) {
-            if (e.target && e.target.tagName === "IMG") {
-
-                const modal = new bootstrap.Modal(document.getElementById("imageModal"));
-                document.getElementById("modalImage").src = e.target.src;
-                modal.show();
-            }
-        });
-    }
-}
-/* function initializeGalleryModal() {
-    const gallery = document.querySelector(".masonry-gallery");
-
-    if (gallery) {
-        gallery.addEventListener("click", function (e) {
-            if (e.target && e.target.tagName === "IMG") {
-                const modalElement = document.getElementById("imageModal");
-                const modal = new bootstrap.Modal(modalElement);
-                document.getElementById("modalImage").src = e.target.src;
-                modal.show();
-                modalElement.style.overflow = 'hidden'; // FIXED
-            }
-        });
-    }
-}
- */

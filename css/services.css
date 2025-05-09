@@ -75,6 +75,9 @@ body.light-mode {
   justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+.sub-container {
+  min-height: 100vh;
+}
 .service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);

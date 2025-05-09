@@ -96,5 +96,83 @@ body.light-mode {
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   padding: 25px;
-  transition: color 0.5s ease-in-out;
+  transition: transform 0.2s ease-in-out !important;
+}
+
+.project:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px) !important;
+}
+
+.fa-bootstrap {
+  color: rgb(116, 44, 250) !important;
+}
+.fa-html5 {
+  color: orangered !important;
+}
+.fa-css3 {
+  color: rgb(19, 60, 245) !important;
+}
+.fa-js {
+  color: yellow !important;
+}
+.fa-php {
+  color: rgb(107, 106, 107) !important;
+}
+
+.light-mode .fa-html5 {
+  color: rgb(214, 69, 12) !important;
+}
+.light-mode .fa-github {
+  color: black !important;
+}
+
+.light-mode .fa-git-alt {
+  color: rgb(206, 68, 14) !important;
+}
+.fa-git-alt {
+  color: rgb(207, 70, 15) !important;
+}
+.light-mode .fa-wordpress {
+  color: rgb(65, 63, 63) !important;
+}
+.light-mode .fa-figma {
+  color: rgb(4, 157, 196) !important;
+}
+.light-mode .fa-sass {
+  color: rgb(236, 83, 142) !important;
+}
+.light-mode .fa-css3-alt {
+  color: rgb(6, 78, 185) !important;
+}
+.light-mode .fa-js {
+  color: rgb(255, 174, 0) !important;
+}
+.light-mode h2 {
+  color: var(--light-header) !important;
+}
+.light-mode .php {
+  color: rgb(63, 58, 58);
+}
+.sub-container i {
+  font-size: 40px;
+  margin-right: 5px;
+}
+
+.fab:hover,
+.fas:hover {
+  animation: spinHover 1s ease;
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes spinHover {
+  0% {
+    transform: rotate(0deg);
+  }
+  /*  50% {
+    transform: rotate(180deg);
+  } */
+  100% {
+    transform: rotate(360deg);
+  }
 }

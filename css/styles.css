@@ -40,11 +40,13 @@ html {
   color: rgb(160, 154, 154) !important;
 }
 .light-mode #sidebar {
-  background-color: white !important;
+  background: linear-gradient(to right top, white, #f3faf0) !important;
+  /*  background-color: white !important; */
   box-shadow: 0px 0px 5px rgb(24, 87, 5) !important;
 }
 .light-mode .mobile-sidebar {
   background-color: white !important;
+
   box-shadow: 0px 0px 5px rgb(24, 87, 5) !important;
 }
 .light-mode .explore-btn {
@@ -107,9 +109,13 @@ input {
   top: 0;
   left: 0;
   width: 240px;
-  /*   background-color: #1b1b1bf8; */
-  background-color: black !important;
-  box-shadow: 0px 0px 5px rgb(7, 7, 7) !important;
+  background: linear-gradient(
+    to right bottom,
+    black 0%,
+    rgb(14, 14, 14) 50%,
+    rgb(14, 13, 13) 100%
+  );
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 #sidebar .nav-link {
