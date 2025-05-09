@@ -1,10 +1,7 @@
 :root {
   --main-fnt-clr: #dcab6b;
-  /* --main-fnt-clr: rgb(255, 187, 0); */
   --primary-color: #dcab6b;
   --primary-body-clr: rgb(20, 20, 20);
-
-  /* light mode */
   --light-body: #a9e06d;
   --light-card: #f3faf0;
   --light-header: #046104;
@@ -13,7 +10,6 @@
 .light-mode .light-contact {
   display: flex !important;
 }
-
 .light-mode .contact-image {
   display: none !important;
 }
@@ -24,36 +20,30 @@ body.light-mode {
   justify-content: center;
 }
 .light-mode .contact-section {
-  background: transparent !important;
+  background: 0 0 !important;
 }
 .light-mode p {
   color: var(--light-text) !important;
 }
-.light-mode .number {
-  color: rgb(0, 0, 0) !important;
+.light-mode .number,
+.light-mode i,
+.name-email input:focus {
+  color: #000 !important;
 }
 .light-mode .myEmail {
-  color: rgb(2, 2, 2) !important;
+  color: #020202 !important;
 }
-.light-mode .contact-form input {
-  background-color: var(--light-card) !important;
-  color: var(--light-text) !important;
-}
+.light-mode .contact-form input,
 .light-mode .contact-form textarea {
   background-color: var(--light-card) !important;
   color: var(--light-text) !important;
 }
+.light-mode .contact-form input:focus,
 .light-mode .contact-form textarea:focus {
   background-color: #313131 !important;
-  color: white !important;
-}
-.light-mode .contact-form input:focus {
-  background-color: #313131 !important;
-
-  color: white !important;
+  color: #fff !important;
 }
 .light-mode .contact-form .btn {
-  /*  background-color: #f4b860; */
   background: linear-gradient(to right top, #046104, #37d622b9);
   font-weight: 500;
   border-radius: 8px;
@@ -68,20 +58,17 @@ body.light-mode {
   color: var(--light-header) !important;
 }
 .light-mode .contact-text h2 {
-  color: rgb(26, 26, 26);
-}
-.light-mode i {
-  color: black !important;
+  color: #1a1a1a;
 }
 .light-mode #contacts-icon a {
-  color: black !important;
-  font-family: 'Poppins' !important;
+  color: #000 !important;
+  font-family: Poppins !important;
   cursor: text !important;
 }
 body {
   color: #fff;
   font-family: 'Segoe UI', sans-serif;
-  background-color: rgb(20, 20, 20) !important;
+  background-color: #141414 !important;
   overflow: hidden !important;
   display: flex;
   align-items: center;
@@ -90,7 +77,6 @@ body {
 html {
   overflow-x: hidden !important;
 }
-
 .contact-container {
   width: 100%;
   box-sizing: border-box;
@@ -108,7 +94,15 @@ html {
   box-sizing: border-box;
   background-color: rgba(20, 20, 20) !important;
 }
-
+.contact-image,
+.light-contact {
+  display: flex;
+  position: relative;
+  margin-bottom: 100px;
+  margin-left: 50px;
+  height: 450px;
+  animation: 1s slideFadeIn;
+}
 .contact-text {
   flex: 1;
   max-width: 550px;
@@ -116,7 +110,9 @@ html {
 }
 .name-email {
   display: flex;
+  display: flex;
   min-width: 100%;
+  gap: 0 12px;
 }
 @media (max-width: 520px) {
   .name-email {
@@ -134,31 +130,21 @@ html {
   font-size: 36px;
   font-weight: 700;
 }
-.contact-text .try {
+.contact-text .try,
+.name-email .this-email {
   width: 100%;
-}
-.name-email {
-  display: flex;
-  min-width: 100%;
-  gap: 0px 12px;
 }
 .name-email .this-name {
   width: 60%;
 }
-.name-email .this-email {
-  width: 100%;
-}
-
 .contact-text h2 span {
   color: #f4b860;
 }
-
 .contact-text p {
   margin: 20px 0;
   font-size: 15px;
   color: #ccc;
 }
-
 .contact-form input,
 .contact-form textarea {
   background: #222;
@@ -168,58 +154,40 @@ html {
   width: 100%;
   resize: none !important;
 }
-.name-email input:focus {
-  color: black !important;
-}
-.name-email input {
+#contactcs-icon a,
+#contacts-icon,
+.name-email input,
+i {
   color: #fff !important;
 }
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: #888;
 }
-.contact-form input:focus {
-  box-shadow: 0 0 4px #f4b860 !important;
-}
+.contact-form input:focus,
 .contact-form textarea:focus {
   box-shadow: 0 0 4px #f4b860 !important;
 }
-
 .contact-form .btn {
   background: linear-gradient(to right top, #f0b262, #f3e6d0);
   font-weight: 500;
   border-radius: 8px;
 }
-
 .contact-form .btn:hover {
   background: linear-gradient(to right top, #f3e6d0, #f0b262);
   color: #222 !important;
 }
-
 .contact-image {
   flex: 1;
-  display: flex;
   justify-content: start;
   align-items: center;
-  position: relative;
-  margin-bottom: 100px;
-  margin-left: 50px;
-  height: 450px;
-  animation: slideFadeIn 1s ease;
 }
 .light-contact {
   flex: 1;
-  display: flex;
   justify-content: start;
   align-items: center;
-  position: relative;
-  margin-bottom: 100px;
-  margin-left: 50px;
-  height: 450px;
   transition: 0.3s ease-in-out;
-  animation: slideFadeIn 1s ease;
 }
-
 @keyframes slideFadeIn {
   0% {
     opacity: 0.8;
@@ -230,39 +198,24 @@ html {
     transform: translateX(0);
   }
 }
-
+.contact-image img,
 .light-contact img {
   max-width: clamp(15%, 35vw, 100%) !important;
   height: auto;
   z-index: 2;
   border-radius: 20px;
 }
-
-.contact-image img {
-  max-width: clamp(15%, 35vw, 100%) !important;
-  height: auto;
-  z-index: 2;
-  border-radius: 20px;
-}
-
 #contacts-icon {
   position: absolute;
   bottom: 0;
   z-index: 3;
   left: 20px;
-  color: #fff !important;
 }
-
 #contactcs-icon a {
-  color: #fff !important;
   margin-left: 12px;
   font-size: 1rem;
 }
-
 .modal-content {
-  background-color: rgb(228, 228, 228);
-  color: black;
-}
-i {
-  color: white !important;
+  background-color: #e4e4e4;
+  color: #000;
 }

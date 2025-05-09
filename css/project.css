@@ -1,43 +1,38 @@
+.btn-demo,
+body {
+  overflow: hidden;
+}
 :root {
   --main-fnt-clr: #dcab6b;
-  /* --main-fnt-clr: rgb(255, 187, 0); */
   --primary-color: #dcab6b;
   --primary-body-clr: rgb(20, 20, 20);
-
-  /* light mode */
   --light-body: #a9e06d;
   --light-card: #f3faf0;
   --light-header: #046104;
   --light-text: #333;
 }
-
 body {
   background-color: var(--primary-body-clr);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
-
 html {
   overflow-x: hidden !important;
 }
-
 body.light-mode {
-  /*   background-color: var(--light-body) !important; */
   background: linear-gradient(to right top, #a9e06d, #f3faf0);
 }
-.light-mode .project h5 {
+.light-mode .project h5,
+.light-mode h2 {
   color: var(--light-header) !important;
 }
-
 .light-mode .project {
   background-color: var(--light-card) !important;
 }
 .light-mode .project p {
   color: var(--light-text) !important;
 }
-
 .container img {
   width: 100%;
   height: 100%;
@@ -50,7 +45,7 @@ body.light-mode {
   color: var(--main-fnt-clr) !important;
 }
 .container p {
-  color: white !important;
+  color: #fff !important;
 }
 .light-mode .btn-demo {
   background: linear-gradient(to top right, #046104, #37d622b9);
@@ -62,32 +57,23 @@ body.light-mode {
 .light-mode .btn-demo:hover {
   background: linear-gradient(to top right, #37d622b9, #046104);
 }
-
 .btn-demo {
   border-radius: 8px;
-  font-weight: normal;
   position: relative;
-  overflow: hidden;
   z-index: 1;
-}
-
-.btn-demo {
   background: linear-gradient(to right top, #f0b262, #f3e6d0);
   font-weight: 500;
 }
 .btn-demo:hover {
   background: linear-gradient(to right top, #f3e6d0, #f0b262);
 }
-
 .projects-container {
   padding: 20px;
 }
-
 .sub-container {
   width: 90%;
   min-height: 100vh;
 }
-
 .project {
   margin-bottom: 30px;
   position: relative;
@@ -98,80 +84,68 @@ body.light-mode {
   padding: 25px;
   transition: transform 0.2s ease-in-out !important;
 }
-
 .project:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   transform: translateY(-5px) !important;
 }
-
 .fa-bootstrap {
-  color: rgb(116, 44, 250) !important;
+  color: #742cfa !important;
 }
 .fa-html5 {
-  color: orangered !important;
+  color: #ff4500 !important;
 }
 .fa-css3 {
-  color: rgb(19, 60, 245) !important;
+  color: #133cf5 !important;
 }
 .fa-js {
-  color: yellow !important;
+  color: #ff0 !important;
 }
 .fa-php {
-  color: rgb(107, 106, 107) !important;
+  color: #6b6a6b !important;
 }
-
 .light-mode .fa-html5 {
-  color: rgb(214, 69, 12) !important;
+  color: #d6450c !important;
 }
 .light-mode .fa-github {
-  color: black !important;
+  color: #000 !important;
 }
-
 .light-mode .fa-git-alt {
-  color: rgb(206, 68, 14) !important;
+  color: #ce440e !important;
 }
 .fa-git-alt {
-  color: rgb(207, 70, 15) !important;
+  color: #cf460f !important;
 }
 .light-mode .fa-wordpress {
-  color: rgb(65, 63, 63) !important;
+  color: #413f3f !important;
 }
 .light-mode .fa-figma {
-  color: rgb(4, 157, 196) !important;
+  color: #049dc4 !important;
 }
 .light-mode .fa-sass {
-  color: rgb(236, 83, 142) !important;
+  color: #ec538e !important;
 }
 .light-mode .fa-css3-alt {
-  color: rgb(6, 78, 185) !important;
+  color: #064eb9 !important;
 }
 .light-mode .fa-js {
-  color: rgb(255, 174, 0) !important;
-}
-.light-mode h2 {
-  color: var(--light-header) !important;
+  color: #ffae00 !important;
 }
 .light-mode .php {
-  color: rgb(63, 58, 58);
+  color: #3f3a3a;
 }
 .sub-container i {
   font-size: 40px;
   margin-right: 5px;
 }
-
 .fab:hover,
 .fas:hover {
-  animation: spinHover 1s ease;
+  animation: 1s spinHover;
   transition: transform 0.3s ease-in-out;
 }
-
 @keyframes spinHover {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0);
   }
-  /*  50% {
-    transform: rotate(180deg);
-  } */
   100% {
     transform: rotate(360deg);
   }

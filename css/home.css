@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 body {
   background-color: #1b1b1b;
   position: relative;
@@ -20,11 +20,9 @@ html {
     url(../images/lighthome-min.png);
   opacity: 1;
 }
-
 .light-mode .name {
   color: var(--light-body) !important;
 }
-
 .welcome {
   display: flex;
   flex-direction: column;
@@ -32,20 +30,19 @@ html {
   justify-content: start;
   z-index: 200;
   margin-top: 10px;
-  margin-left: 0px;
+  margin-left: 0;
 }
 .welcome h1 {
   font-size: clamp(9rem, 20vw, 15rem);
-  font-family: 'Poppins';
-  margin: 0px !important;
+  font-family: Poppins;
+  margin: 0 !important;
   font-weight: 300;
   letter-spacing: -10px;
 }
 .welcome p {
-  margin: -40px 0px 0px 0px;
+  margin: -40px 0 0;
   padding-top: 5px;
 }
-
 .home-container {
   min-height: 100vh;
   background-color: #050505;
@@ -55,7 +52,6 @@ html {
   align-items: start;
   justify-content: start;
 }
-
 .profile-img {
   background-image: linear-gradient(
       to right top,

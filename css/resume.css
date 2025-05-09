@@ -1,16 +1,12 @@
 :root {
   --main-fnt-clr: #dcab6b;
-  /* --main-fnt-clr: rgb(255, 187, 0); */
   --primary-color: #dcab6b;
   --primary-body-clr: rgb(20, 20, 20);
-
-  /* light mode */
   --light-body: #a9e06d;
   --light-card: #f3faf0;
   --light-header: #046104;
   --light-text: #333333;
 }
-
 body {
   background-color: var(--primary-body-clr);
   color: #f3f3f3;
@@ -22,35 +18,29 @@ body {
 html {
   overflow-x: hidden !important;
 }
-
 body.light-mode {
   background: linear-gradient(to right top, #a9e06d, #f3faf0);
 }
+.light-mode .resume-section h6,
 .light-mode i {
-  color: black !important;
+  color: #000 !important;
 }
-
 .light-mode .resume-card {
   background-color: var(--light-card) !important;
 }
+.light-mode .resume-container i,
 .light-mode h4 {
   color: var(--light-header) !important;
 }
 .light-mode p {
   color: var(--light-text) !important;
 }
-.light-mode .resume-section h6 {
-  color: black !important;
-}
 .light-mode .resume-section small {
-  color: rgb(26, 25, 25) !important;
-}
-.light-mode .resume-container i {
-  color: var(--light-header) !important;
+  color: #1a1919 !important;
 }
 .light-mode .badge-skill {
   background-color: var(--light-header) !important;
-  color: rgb(223, 220, 220) !important;
+  color: #dfdcdc !important;
 }
 .light-mode .timeline {
   border-left: 3px solid var(--light-body) !important;
@@ -66,28 +56,21 @@ body.light-mode {
   padding: 20px;
 }
 .resume-card p {
-  margin: 10px 0px !important;
+  margin: 10px 0 !important;
 }
-
 .resume-title {
-  /*  font-size: 2.5rem; */
-  font-weight: bold;
-  /*   margin-bottom: 40px; */
-  /* color: var(--main-fnt-clr);  */
-  color: rgb(236, 235, 235) !important;
+  font-weight: 700;
+  color: #ecebeb !important;
 }
-
 .timeline {
   position: relative;
   padding-left: 40px;
   border-left: 3px solid var(--primary-color);
 }
-
 .timeline-item {
   margin-bottom: 30px;
   position: relative;
 }
-
 .timeline-item::before {
   content: '';
   position: absolute;
@@ -99,7 +82,6 @@ body.light-mode {
   border: 2px solid var(--primary-color);
   border-radius: 50%;
 }
-
 .resume-card {
   background: rgba(255, 255, 255, 0.03);
   border-radius: 12px;
@@ -107,20 +89,17 @@ body.light-mode {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   padding: 25px;
 }
-
 .badge-skill {
   background-color: var(--primary-color);
   color: #141414;
   font-weight: 500;
 }
-
 .resume-card h4 i {
   color: var(--primary-color);
 }
 small {
-  color: rgb(202, 201, 201) !important;
+  color: #cac9c9 !important;
 }
-
 .blob-bg {
   position: absolute;
   top: -100px;

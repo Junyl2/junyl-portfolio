@@ -7,12 +7,11 @@
   }
 }
 @media (max-width: 1360px) {
-  .introduce p,
-  .artworks p {
+  .artworks p,
+  .introduce p {
     font-size: 1rem;
   }
 }
-
 @media (max-width: 992px) {
   .contact-section {
     flex-direction: column-reverse;
@@ -23,43 +22,34 @@
     padding-left: 30px !important;
     padding-right: 30px !important;
   }
-  .contact-text,
-  .contact-image {
+  .contact-image,
+  .contact-text {
     max-width: 100%;
     padding: 0;
     margin: 0 auto;
   }
-
   .contact-image,
   .light-contact {
-    margin: 50px 0 40px 0;
+    margin: 50px 0 40px;
     height: auto;
     justify-content: center;
   }
-
   .contact-image img {
     max-width: 100%;
     height: auto;
   }
-
   #contacts-icon {
     position: static;
     margin-top: 15px;
     display: flex;
-    flex-direction: column !;
     align-items: center;
     gap: 10px;
   }
-
+  .mobile-artworks,
   .sub-container {
     min-width: 100% !important;
   }
-  .mobile-artworks {
-    min-width: 100% !important;
-  }
 }
-
-/* Hide sidebar on small screens */
 @media (max-width: 768px) {
   #sidebar {
     display: none;
@@ -72,7 +62,6 @@
     margin-left: -30px;
   }
 }
-
 @media (max-width: 700px) {
   .introduce-container {
     align-items: center !important;
@@ -81,15 +70,13 @@
     justify-content: start;
     align-items: start;
   }
-
   .welcome h1 {
     margin-bottom: 10px !important;
   }
   .projects-container .sub-container {
-    padding: 0px 30px !important;
+    padding: 0 30px !important;
   }
 }
-
 @media (max-width: 520px) {
   .skills-grid {
     margin-top: 40px;
@@ -98,8 +85,8 @@
     font-size: 2.7rem;
   }
   .row {
-    margin-top: 0px !important;
-    padding: 0px !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
   }
   .about-parent {
     padding-left: 30px;
@@ -112,29 +99,22 @@
   .services-heading {
     margin-top: 20px !important;
   }
-
   .welcome {
     margin-top: 40px !important;
     margin-left: -25px !important;
   }
-  .projects-container {
-    padding: 20px 0px !important;
-  }
+  .projects-container,
   .resume-container {
-    padding: 20px 0px !important;
+    padding: 20px 0 !important;
   }
   .resume-section {
     width: 100%;
   }
   .skills-container {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
-  /*  .section-heading {
-    margin-top: 20px !important;
-  } */
 }
-
 @media (max-width: 468px) {
   #contacts-icon {
     margin-left: 10px;
