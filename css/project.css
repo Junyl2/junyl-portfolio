@@ -38,9 +38,9 @@ body.light-mode {
   height: 100%;
   object-fit: cover;
 }
-.container img:active {
+/* .container img:active {
   transform: scale(2);
-}
+} */
 .container h5 {
   color: var(--main-fnt-clr) !important;
 }
@@ -69,6 +69,14 @@ body.light-mode {
 }
 .projects-container {
   padding: 20px;
+}
+.tailwind {
+  height: 40px !important;
+  width: 40px !important;
+  transition: transform 0.3s ease-in-out;
+}
+.tailwind:hover {
+  animation: 1s spinHover;
 }
 .sub-container {
   width: 90%;
@@ -117,6 +125,12 @@ body.light-mode {
 }
 .light-mode .fa-wordpress {
   color: #413f3f !important;
+}
+.light-mode .fa-plug {
+  color: #252323 !important;
+}
+.fa-plug {
+  color: #707070 !important;
 }
 .light-mode .fa-figma {
   color: #049dc4 !important;

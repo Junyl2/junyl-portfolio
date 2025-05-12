@@ -64,7 +64,7 @@ export function loadPage(page, callback) {
 
       initializeEnhancements();
 
-      const revealContent = () => {
+      /*  const revealContent = () => {
         firstLoader.style.display = 'none';
 
         const flip = document.querySelector('.flip');
@@ -74,17 +74,29 @@ export function loadPage(page, callback) {
         if (wrapper) wrapper.style.display = 'block';
 
         if (typeof callback === 'function') callback();
-      };
+      }; */
 
       const lastLetter = document.querySelector(
         '.loader-name h1 span:last-child'
       );
+
       if (lastLetter) {
-        lastLetter.addEventListener('animationend', revealContent, {
-          once: true,
-        });
-      } else {
-        setTimeout(revealContent, 4500);
+        lastLetter.addEventListener(
+          'animationend',
+          () => {
+            const flip = document.getElementById('first-loader');
+            setTimeout(() => {
+              flip.classList.add('animate');
+            }, 800);
+
+            setTimeout(() => {
+              flip.style.display = 'none';
+              document.getElementById('app-wrapper').style.display = 'block';
+              if (typeof callback === 'function') callback();
+            }, 1100);
+          },
+          { once: true }
+        );
       }
     })
     .catch((err) => {

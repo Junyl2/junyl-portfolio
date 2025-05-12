@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden !important;
+  overflow-x: hidden !important;
 }
 html {
   overflow-x: hidden !important;
@@ -53,13 +53,13 @@ body.light-mode {
 }
 .skills-container {
   padding: 20px;
+  min-height: 100vh;
 }
 .fa-bootstrap {
   color: #4d0080;
 }
 .skills-grid {
   width: 100%;
-  min-height: 100vh;
 }
 .skill-item {
   text-align: center;
